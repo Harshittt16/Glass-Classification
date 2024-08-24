@@ -1,0 +1,47 @@
+This code performs the following tasks:
+
+1. Loads the dataset.
+2. Displays the first few rows of the dataset.
+3. Checks and displays missing values.
+4. Shows basic statistics of the dataset.
+5. Plots histograms to show the distribution of each feature.
+6. Creates pairplots to visualize pairwise relationships between features.
+7. Displays a correlation heatmap.
+8. Plots boxplots to show the distribution of each feature.
+9. Shows the class distribution.
+10. Show class distribution using pie chart.
+11. show classs distribution using scatter plot chart
+12. show the summary...
+
+Code Explanation
+
+python
+1. to add title : st.title likho 
+2. to add sub header: st.subheader subheader_name
+3. missing values = data is null,sum () function
+4. to draw statistics of whole datasets write st. write(data.describe())
+5. Distribution of each feature
+there r 2 functions :
+1. num_cols = len(data.columns) -> Example: If your dataset has columns ['A', 'B', 'C', 'D', 'E'], then len(data.columns) will be 5.
+2. num_rows = (num_cols + 2) // 3 ->  This line calculates the number of rows needed to display the subplots, given that there will be 3 subplots per row.
+*****feature distribution works with boxplots function
+*****Axes() function creates axes object with argument, where argument is a list of 4 elemants(left, bottom, width, height)
+PIE CHART: AX function is used to create pie chart -> fig, ax = plt.subplots()
+***** edit autopct by 2f or 1f etc....
+	edit startangle by 180 degree , 90 degree or 360 degree
+
+
+Conclusion
+The EDA conducted in this project provides a thorough understanding of the glass classification dataset. By leveraging various visualization and summary techniques, we gain insights into the distributions, relationships, and potential issues within the data. These insights are essential for informing further steps in the data analysis process, such as feature selection, data preprocessing, and model building.
+
+DATASET
+MISSING VALUES
+STATISTICS
+FEATURE DISTRIBUTIONS
+PAIRPLOT
+CORRELATION HEATMAP
+BOXPLOTS
+CLASS DISTRIBUTIONS - BAR CHART
+CLASS DISTRIBUTIONS - PIE CHART
+SCATTER PLOT
+SUMMARY OF HIGHEST AND LOWEST VALUES 
